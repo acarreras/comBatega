@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
@@ -6,13 +6,13 @@
 		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="addons\;src\;" />
+		<Option virtualFolders="addons\;src\;addons\ofxUI\src\;addons\ofxTween\src\;addons\ofxTween\src\Easings\;addons\ofxXmlSettings\src\;addons\ofxXmlSettings\libs\;" />
 		<Build>
 			<Target title="release">
-				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj\Release" />
-				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option object_output="obj/Release" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib;" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="2" />
@@ -25,10 +25,10 @@
 				</Linker>
 			</Target>
 			<Target title="debug">
-				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj\Debug\" />
-				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib;" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="2" />
@@ -42,44 +42,40 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wno-multichar" />
-			<Add directory="..\..\..\libs\glu\include" />
-			<Add directory="..\..\..\libs\freetype\include" />
-			<Add directory="..\..\..\libs\freetype\include\freetype2" />
-			<Add directory="..\..\..\libs\FreeImage\include" />
-			<Add directory="..\..\..\libs\quicktime\include" />
-			<Add directory="..\..\..\libs\rtAudio\include" />
-			<Add directory="..\..\..\libs\fmodex\include" />
-			<Add directory="..\..\..\libs\videoInput\include" />
-			<Add directory="..\..\..\libs\glew\include" />
-			<Add directory="..\..\..\libs\glut\include" />
-			<Add directory="..\..\..\libs\glfw\include" />
-			<Add directory="..\..\..\libs\openFrameworks" />
-			<Add directory="..\..\..\libs\openFrameworks\3d" />
-			<Add directory="..\..\..\libs\openFrameworks\app" />
-			<Add directory="..\..\..\libs\openFrameworks\communication" />
-			<Add directory="..\..\..\libs\openFrameworks\events" />
-			<Add directory="..\..\..\libs\openFrameworks\gl" />
-			<Add directory="..\..\..\libs\openFrameworks\graphics" />
-			<Add directory="..\..\..\libs\openFrameworks\math" />
-			<Add directory="..\..\..\libs\openFrameworks\sound" />
-			<Add directory="..\..\..\libs\openFrameworks\types" />
-			<Add directory="..\..\..\libs\openFrameworks\utils" />
-			<Add directory="..\..\..\libs\openFrameworks\video" />
-			<Add directory="..\..\..\libs\poco\include" />
-			<Add directory="..\..\..\libs\tess2\include" />
-			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="../../../libs/glu/include" />
+			<Add directory="../../../libs/freetype/include" />
+			<Add directory="../../../libs/freetype/include/freetype2" />
+			<Add directory="../../../libs/FreeImage/include" />
+			<Add directory="../../../libs/quicktime/include" />
+			<Add directory="../../../libs/rtAudio/include" />
+			<Add directory="../../../libs/fmodex/include" />
+			<Add directory="../../../libs/videoInput/include" />
+			<Add directory="../../../libs/glew/include" />
+			<Add directory="../../../libs/glut/include" />
+			<Add directory="../../../libs/glfw/include" />
+			<Add directory="../../../libs/openFrameworks" />
+			<Add directory="../../../libs/openFrameworks/3d" />
+			<Add directory="../../../libs/openFrameworks/app" />
+			<Add directory="../../../libs/openFrameworks/communication" />
+			<Add directory="../../../libs/openFrameworks/events" />
+			<Add directory="../../../libs/openFrameworks/gl" />
+			<Add directory="../../../libs/openFrameworks/graphics" />
+			<Add directory="../../../libs/openFrameworks/math" />
+			<Add directory="../../../libs/openFrameworks/sound" />
+			<Add directory="../../../libs/openFrameworks/types" />
+			<Add directory="../../../libs/openFrameworks/utils" />
+			<Add directory="../../../libs/openFrameworks/video" />
+			<Add directory="../../../libs/poco/include" />
+			<Add directory="../../../libs/tess2/include" />
+			<Add directory="../../../libs/cairo/include/cairo" />
 			<Add directory="src" />
 			<Add directory="../../../addons/ofxXmlSettings/libs" />
 			<Add directory="../../../addons/ofxXmlSettings/src" />
-			<Add directory="../../../addons\ofxXmlSettings\libs" />
-			<Add directory="../../../addons\ofxXmlSettings\src" />
 			<Add directory="../../../addons/ofxTween/libs" />
 			<Add directory="../../../addons/ofxTween/src" />
-			<Add directory="../../../addons\ofxTween\src" />
-			<Add directory="../../../addons\ofxTween\src\Easings" />
+			<Add directory="../../../addons/ofxTween/src/Easings" />
 			<Add directory="../../../addons/ofxUI/libs" />
 			<Add directory="../../../addons/ofxUI/src" />
-			<Add directory="../../../addons\ofxUI\src" />
 		</Compiler>
 		<Linker>
 			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
@@ -123,20 +119,252 @@
 			<Add library="Comdlg32" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;" />
-			<Add after="cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;" />
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
 			<Mode after="always" />
 		</ExtraCommands>
+		<Unit filename="../../../addons/ofxTween/src/Easings/easing_terms_of_use.html">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasing.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasing.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBack.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBack.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBounce.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBounce.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCirc.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCirc.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCubic.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCubic.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingElastic.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingElastic.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingExpo.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingExpo.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingLinear.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingLinear.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuad.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuad.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuart.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuart.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuint.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuint.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingSine.cpp">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingSine.h">
+			<Option virtualFolder="addons/ofxTween/src/Easings" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/ofxTween.cpp">
+			<Option virtualFolder="addons/ofxTween/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTween/src/ofxTween.h">
+			<Option virtualFolder="addons/ofxTween/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUI.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUI2DGraph.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUI2DPad.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIBaseDraws.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIBiLabelSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUICanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUICircleSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUICustomImageButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIDropDownList.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIEventArgs.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIFPS.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIFPSSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIImage.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIImageButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIImageSampler.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIImageSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIImageToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUILabel.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUILabelButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUILabelToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIMinimalSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIMovingGraph.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIMultiImageButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIMultiImageSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIMultiImageToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUINumberDialer.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIRadio.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIRangeSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIRectangle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIRotarySlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIScrollableCanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUISlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUISpacer.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUISpectrum.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUISuperCanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUITextArea.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUITextInput.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIToggleMatrix.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIValuePlotter.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIWaveform.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIWidget.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxUI/src/ofxUIWidgetWithLabel.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.h">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.h">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
 		<Unit filename="icon.rc">
 			<Option compilerVar="WINDRES" />
+			<Option virtualFolder="src/" />
 		</Unit>
-		<Unit filename="src\main.cpp">
+		<Unit filename="src/main.cpp">
 			<Option virtualFolder="src" />
 		</Unit>
-		<Unit filename="src\testApp.cpp">
+		<Unit filename="src/testApp.cpp">
 			<Option virtualFolder="src" />
 		</Unit>
-		<Unit filename="src\testApp.h">
+		<Unit filename="src/testApp.h">
 			<Option virtualFolder="src" />
 		</Unit>
 		<Extensions>
@@ -144,236 +372,5 @@
 			<debugger />
 			<envvars />
 		</Extensions>
-		<Unit filename="../../../addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
-			<Option virtualFolder="addons\ofxXmlSettings\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxXmlSettings\src\ofxXmlSettings.h">
-			<Option virtualFolder="addons\ofxXmlSettings\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxml.cpp">
-			<Option virtualFolder="addons\ofxXmlSettings\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxml.h">
-			<Option virtualFolder="addons\ofxXmlSettings\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
-			<Option virtualFolder="addons\ofxXmlSettings\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
-			<Option virtualFolder="addons\ofxXmlSettings\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\easing_terms_of_use.html">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasing.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasing.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingBack.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingBack.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingBounce.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingBounce.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingCirc.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingCirc.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingCubic.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingCubic.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingElastic.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingElastic.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingExpo.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingExpo.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingLinear.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingLinear.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuad.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuad.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuart.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuart.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuint.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingQuint.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingSine.cpp">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\Easings\ofxEasingSine.h">
-			<Option virtualFolder="addons\ofxTween\src\Easings" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\ofxTween.cpp">
-			<Option virtualFolder="addons\ofxTween\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxTween\src\ofxTween.h">
-			<Option virtualFolder="addons\ofxTween\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUI.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUI2DGraph.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUI2DPad.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIBaseDraws.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIBiLabelSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIButton.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUICanvas.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUICircleSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUICustomImageButton.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIDropDownList.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIEventArgs.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIFPS.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIFPSSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIImage.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIImageButton.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIImageSampler.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIImageSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIImageToggle.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUILabel.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUILabelButton.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUILabelToggle.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIMinimalSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIMovingGraph.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIMultiImageButton.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIMultiImageSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIMultiImageToggle.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUINumberDialer.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIRadio.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIRangeSlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIRectangle.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIRotarySlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIScrollableCanvas.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUISlider.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUISpacer.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUISpectrum.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUISuperCanvas.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUITextArea.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUITextInput.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIToggle.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIToggleMatrix.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIValuePlotter.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIWaveform.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIWidget.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxUI\src\ofxUIWidgetWithLabel.h">
-			<Option virtualFolder="addons\ofxUI\src" />
-		</Unit>
 	</Project>
 </CodeBlocks_project_file>
