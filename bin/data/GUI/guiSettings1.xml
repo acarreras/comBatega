@@ -1,105 +1,20 @@
 <Widget>
     <Kind>4</Kind>
     <Name>FPS SLIDER</Name>
-    <Value>84.823608398</Value>
-</Widget>
-<Widget>
-    <Kind>12</Kind>
-    <Name>TITOLtext</Name>
-    <Value>COM BATEGA LA CULTURA...</Value>
+    <Value>73.685813904</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>TITOLx</Name>
-    <Value>86.709678650</Value>
+    <Name>DURATIONup</Name>
+    <Value>201.612899780</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>TITOLy</Name>
-    <Value>545.032226562</Value>
+    <Name>ALPHAmin</Name>
+    <Value>97.681449890</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
-    <Name>TITOLduration</Name>
-    <Value>2862.903076172</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>TITOLdelay</Name>
-    <Value>350.806457520</Value>
-</Widget>
-<Widget>
-    <Kind>12</Kind>
-    <Name>BATEGA0text</Name>
-    <Value>EL COR D&apos;UN NEN</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA0x</Name>
-    <Value>611.096801758</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA0y</Name>
-    <Value>139.354843140</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA0duration</Name>
-    <Value>383.064514160</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA0delay</Name>
-    <Value>36.290321350</Value>
-</Widget>
-<Widget>
-    <Kind>12</Kind>
-    <Name>BATEGA1text</Name>
-    <Value>EL COR D&apos;UN ADULT</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA1x</Name>
-    <Value>623.483886719</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA1y</Name>
-    <Value>198.193542480</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA1duration</Name>
-    <Value>887.096740723</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA1delay</Name>
-    <Value>48.387096405</Value>
-</Widget>
-<Widget>
-    <Kind>12</Kind>
-    <Name>BATEGA2text</Name>
-    <Value>UN ACRÒBATA EN ESCENA</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA2x</Name>
-    <Value>619.354858398</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA2y</Name>
-    <Value>253.935485840</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA2duration</Name>
-    <Value>221.774185181</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>BATEGA2delay</Name>
-    <Value>24.193548203</Value>
+    <Name>ALPHAmax</Name>
+    <Value>255.000000000</Value>
 </Widget>

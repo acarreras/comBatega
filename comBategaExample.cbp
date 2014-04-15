@@ -6,7 +6,7 @@
 		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="addons\;src\;addons\ofxUI\src\;addons\ofxTween\src\;addons\ofxTween\src\Easings\;addons\ofxXmlSettings\src\;addons\ofxXmlSettings\libs\;" />
+		<Option virtualFolders="addons\;src\;addons\ofxUI\src\;addons\ofxXmlSettings\src\;addons\ofxXmlSettings\libs\;" />
 		<Build>
 			<Target title="release">
 				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
@@ -123,87 +123,6 @@
 			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
 			<Mode after="always" />
 		</ExtraCommands>
-		<Unit filename="../../../addons/ofxTween/src/Easings/easing_terms_of_use.html">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasing.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasing.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBack.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBack.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBounce.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingBounce.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCirc.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCirc.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCubic.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingCubic.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingElastic.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingElastic.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingExpo.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingExpo.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingLinear.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingLinear.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuad.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuad.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuart.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuart.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuint.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingQuint.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingSine.cpp">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/Easings/ofxEasingSine.h">
-			<Option virtualFolder="addons/ofxTween/src/Easings" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/ofxTween.cpp">
-			<Option virtualFolder="addons/ofxTween/src" />
-		</Unit>
-		<Unit filename="../../../addons/ofxTween/src/ofxTween.h">
-			<Option virtualFolder="addons/ofxTween/src" />
-		</Unit>
 		<Unit filename="../../../addons/ofxUI/src/ofxUI.h">
 			<Option virtualFolder="addons/ofxUI/src" />
 		</Unit>
