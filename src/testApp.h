@@ -32,6 +32,7 @@ class testApp : public ofBaseApp{
         vector <float> currenttime;
         vector <float> durationdown;
 
+        ofxXmlSettings XMLtext;
         vector <string> stext;
         vector <ofPoint> postext;
 

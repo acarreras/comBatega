@@ -1,30 +1,45 @@
 <Widget>
     <Kind>4</Kind>
     <Name>FREQ_0</Name>
-    <Value>136.782257080</Value>
+    <Value>131.975799561</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POSx_0</Name>
-    <Value>148.645156860</Value>
+    <Value>152.774200439</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POSy_0</Name>
-    <Value>743.225769043</Value>
+    <Value>498.580627441</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>FREQ_1</Name>
-    <Value>111.548385620</Value>
+    <Value>146.395172119</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POSx_1</Name>
-    <Value>165.161285400</Value>
+    <Value>491.354827881</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>POSy_1</Name>
-    <Value>340.645141602</Value>
+    <Value>572.903198242</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>FREQ_2</Name>
+    <Value>121.762100220</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>POSx_2</Name>
+    <Value>429.419342041</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>POSy_2</Name>
+    <Value>665.806457520</Value>
 </Widget>

@@ -15,8 +15,22 @@ void testApp::setup(){
 
 	// TEXTOS
 	// guardar el fitxer en UTF-8 per a que entengui els accents!
-	stext.push_back("COM BATEGA LA CULTURA...");
-	stext.push_back("test d'accents áéèíìóòúüÁÉÍÓÚçÇñÑ");
+	if(XMLtext.loadFile("textsBatega.xml")){
+		cout << "XML:: textsBatega.xml loaded!" << endl;
+		int ntexts = XMLtext.getNumTags("TEXT");
+		if(ntexts > 0){
+            string txt = "";
+            for(int i=0; i<ntexts; i++){
+                //the last argument of getValue can be used to specify
+                //which tag out of multiple tags you are refering to.
+                txt = XMLtext.getValue("TEXT", "no text", i);
+                stext.push_back(txt);
+            }
+        }
+	}
+	else{
+		cout << "XML:: unable to load textsBatega.xml check data/ folder" << endl;
+	}
 
 
 	// GUI
@@ -192,4 +206,11 @@ void testApp::exit(){
     gui2->saveSettings("GUI/guiSettings2.xml");
     delete gui1;
     delete gui2;
+
+    XMLtext.clear();
+    for(int k=0; k<stext.size(); k++){
+        int tagNum = XMLtext.addTag("TEXT");
+		XMLtext.setValue("TEXT", stext.at(k), tagNum);
+	}
+	XMLtext.saveFile("textsBatega.xml");
 }
